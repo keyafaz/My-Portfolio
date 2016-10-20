@@ -35,9 +35,6 @@ body {
   background-color: transparent;
 }
 
-#rwd_pic{
-  width:65px;
-}
 
 #intro{
   position: absolute; 
@@ -184,20 +181,20 @@ input[type=text]:-moz-placeholder, input[type=email]:-moz-placeholder,textarea:-
  .tan, .whites{
   background-color: #f9f9eb;
   opacity: 0.65;
-  color: black;
-
 }    
 
 .header{
   text-align: center; 
-  color: black;
+  color: white;
   text-shadow: 5px 5px 10px black ;  
   padding-bottom: 25px;
+
 }
 
 #contact input, #contact textarea{
   width: 50%;
-  border: 1px white solid;border-radius: 4px;
+  border: 1px white solid;
+  border-radius: 4px;
 }
 
  #contact textarea{
@@ -239,8 +236,10 @@ tbody td{
   text-align: center;
 }
 
-table{
+td, th{
   margin-top: 60px;
+  background: black;
+  color:  lightgrey;
 }
 
 thead th{
@@ -250,18 +249,27 @@ thead th{
 .row p{
   padding-top: 5px;
   padding-bottom: 5px;
-  font-size: 16px ;
+  font-size: 16px ; 
+  text-align: center;
+  color: #e6e6fa;
 }
 
+
 .row.container{
-  width: 90%;padding-left: 70px;
+  width: 90%;
+  margin-left: 0;
+  margin-right: 0;
+  /*padding-left: 70px;*/
 }
 
 #portfolio p a{
   color: black; 
   font-weight: bolder;
 }
-
+.section{
+  margin-right: 10px;
+  width: 100%
+}
 #portfolio img{
   width:100%;
   height: 100%;
@@ -377,8 +385,8 @@ footer.page-footer {
  }
 
 #tabs{
-  text-align: center;
-  min-width: 200px;
+  /*text-align: center;*/
+  /*min-width: 200px;*/
   border: none;
   background-color: #f9f9eb;
 
@@ -398,7 +406,18 @@ ul.nav.nav-tabs.ui-tabs-nav.ui-corner-all.ui-helper-reset.ui-helper-clearfix.ui-
 .galleryItem h3 {
   text-transform: uppercase;
 }
+.galleryItem p{
+   text-align: center;
+}
 
+.portimg{
+  /*display: inline-block;*/
+  /*width: 50%;*/
+  /*margin-left: 15%;*/
+
+  /*max-width: 200px;*/
+/*  vertical-align: top;*/
+}
 .galleryItem img {
   max-width: 100%;
   -webkit-border-radius: 5px;
@@ -407,17 +426,23 @@ ul.nav.nav-tabs.ui-tabs-nav.ui-corner-all.ui-helper-reset.ui-helper-clearfix.ui-
 }
 .galleryItem {
   color: black;
-  opacity: 19;
-  display: inline-block;
-  width: 28%;
-  margin:  2% 2% 50px 2%; 
-  vertical-align: top;
-   min-width: 300px;
+  /*opacity: 19;*/
+  /*display: inline-block;*/
+  /*width: 28%;*/
+  /*margin:  2% 2% 50px 2%; */
+  /*vertical-align: top;*/
+   /*min-width: 300px;*/
+
+   padding-top: 10px;
 }
 
+/*.porttext{
+  display: inline-block;
+  width: 75%;
+}*/
 @media only screen and (max-width : 940px),
 only screen and (max-device-width : 940px){
-  .galleryItem {width: 21%;}
+  .galleryItem {width: 100%;}
 }
  
 @media only screen and (max-width : 720px),
@@ -427,13 +452,13 @@ only screen and (max-device-width : 720px){
  
 @media only screen and (max-width : 530px),
 only screen and (max-device-width : 530px){
-  .galleryItem {width: 46%;}
+  .galleryItem {width: 100%;}
 }
  
 @media only screen and (max-width : 320px),
 only screen and (max-device-width : 320px){
   .galleryItem {width: 96%;}
   .galleryItem img {width: 96%;}
-  .galleryItem h3 {font-size: 18px;}
-  .galleryItem p, {font-size: 18px;}
+  .galleryItem h3 {font-size: 16px;}
+  .galleryItem p, {font-size: 16px;}
 }

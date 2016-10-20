@@ -46,13 +46,12 @@
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" id="main"> 
+	<span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-black w3-text-light-grey" id="bar" onclick="w3_open()"><i class="fa fa-bars"></i></span>
 
-
- 
-
-	<div class="section whites w3-margin-top ">
-		<div class="row container " id="aboutme">
-			<h2 class="header">Who Am I?</h2>
+	<div class="section  w3-margin-top  ">
+		<h2 class="header w3-text-white">Who Am I?</h2>
+		<div class="row container w3-round w3-margin" id="aboutme">
+			
 			<p class="fl">I am in love with Web Development … and from what I can tell, Web Development loves me back.</p>
 			
 			<div class="oval"><h2 id="beautiful" >Being given the opportunity to create  something every day is a beautiful thing…</h2></div>
@@ -64,15 +63,16 @@
 			<p>Society may tell me that I am not fit to be a programmer, but I am here to prove them wrong. As long as I have my tools… Ruby on rails, JavaScript, HTML, CSS, Python, jQuery, etc. … me and my love can conquer anything we set out to do.</p>
 			</div>
 			<p class="fl">Like I said, I’m in love with Web Development.</p>
-			<table class="table">
-				<thead class="">
+			<div class="w3-responsive">
+			<table class="table w3-table-all w3-card-4">
+				<thead>
 					<th>Languages</th>
 					<th>Front-End</th>
 					<th>Back-End</th>
 					<th>Databases</th>
 					<th>MISC</th>
 				</thead>
-				<tbody class="">
+				<tbody>
 					<tr>
 						<td>Ruby, JavaScript, Python</td>
 						<td>HTML5, CSS3, JavaScript, jQuery, jQuery UI, AJAX, Angular.js, Bootstrap, Pure.CSS, W3.CSS, Materialize.CSS</td>
@@ -82,6 +82,7 @@
 					</tr>
 				</tbody>
 			</table>
+			</div>
    		</div>
 	</div>
 
@@ -93,7 +94,7 @@
 		</div>
 	</div>
 	
-	<div class="section tan window ">
+	<div class="section window ">
 		<div class="row container" id="portfolio">
 			<h2 class="header">Portfolio</h2>
 			<p class="grey-text text-darken-3 lighten-3">Take a look at some of awesome apps that I have created as well as projects I’m currently working on. Don’t forget to check out my <a href="https://github.com/keyafaz" target="_blank">GitHub</a> for other cool creations.</p>
@@ -109,107 +110,145 @@
 			  </ul>
 
 			<div id="tabs-1">
-				<div class="galleryItem w3-padding-4">
-					<img src="images/Bright_ideas.PNG" class="img-responsive w3-hover-opacity" alt="Responsive image-Bright Ideas" style="width:100%;" target="_blank">
-					<div class="w3-container w3-center">
-						<h3>Bright Ideas</h3>
-						<p>Bright Ideas is a web app that allows users to post ideas on a dashboard. Users can like ideas posted by other users and delete ideas that they post. Users can click on the idea and see total number of likes as well as a list of users who liked it or they can click on other users name and see the total number of posts and likes they have.</p>
-						<p>Technologies: Ruby on Rails, PostgreSQL, BCrypt, Capybara, Pure.CSS, W3.CSS</p>
-						<a href="http://youtu.be/FOj3HpGfe5Q?hd=1" target="_blank" class="btn btn-default" role="button">Video</a> 
-						<a href="https://github.com/keyafaz/Bright-Ideas" target="_blank" class="btn btn-default" role="button">Github</a>
-					</div>
-				</div>
-
-				<div class="galleryItem w3-padding-4">
-					<img src="images/events.PNG" class="img-responsive w3-hover-opacity" alt="Responsive image-Events" style="width:100%;" target="_blank">
-					<div class="w3-container w3-center">
-						<h3>Events</h3>
-			         <p>Events is web app that allows users to create and join events/cancel participation. The Event Dashboard displays all events separated by the state to where the event will be held: 1 table shows all the events located in the same state as the logged in user’s location and a second table for all events held in other states. The user who created an event has the option to edit or delete that event. Logged users can also add comments on the discussion board per event and see the attendees per event.</p>
-						<p>Technologies: Ruby on Rails, PostgreSQL, BCrypt, Capybara, Pure.CSS, W3.CSS</p>
-						<a href="http://youtu.be/bHUmJ3Agd1g?hd=1" target="_blank" class="btn btn-default" role="button">Video</a>
-						<a href="https://github.com/keyafaz/Events" target="_blank" class="btn btn-default" role="button">Github</a>
-					</div>
-				</div>
-
 				<div class="galleryItem">
-					<img src="images/Ninja_Gold.PNG" class="img-responsive w3-hover-opacity" alt="Responsive image-Ninja Gold" style="width:100%;" target="_blank">
-					<div class="w3-container w3-center">
-						<h3>Ninja Gold Game</h3>
-						<p>The goal in this mini-game is to help a ninja make money. At the start of the game, the ninja has 0 gold. The ninja can visit different places (farm, cave, house, or casino) to earn different amounts of gold. My objective was to create a web app that allows a ninja to earn a certain amount of gold per place visited, display past activities of the ninja (I queried the activity log to show only the 5 most recent activities), and to determine the total amount of gold the user should have and to save this and the activity log using sessions.</p>
-						<p>Technologies: Ruby on Rails, SQLite, HTML5, CSS3, W3.CSS</p>
-						<a href="http://youtu.be/vUW6R3Wc2YE?hd=1" target="_blank" class="btn btn-default" role="button">Video</a>
-						<a href="https://github.com/keyafaz/Ninja-Gold-Game" target="_blank" class="btn btn-default" role="button">Github</a>
+					<div class="w3-card-8 w3-dark-grey w3-round-large w3-padding">
+						<div class="w3-container w3-center">
+							<h3 class="w3-pale-blue w3-round">Bright Ideas</h3>
+							<img src="images/Bright_ideas.PNG" class="w3-left w3-show-inline-block img-responsive portimg w3-hover-opacity " alt="Responsive image-Bright Ideas" target="_blank" style="width:50%;">
+							<p>Bright Ideas is a web app that allows Users to post ideas on a dashboard. Users can like ideas posted by other users and delete ideas that they post. Users can click on the idea and see total number of likes as well as a list of users who liked it or they can click on other users name and see the total number of posts and likes they have.</p>
+							<p>Technologies: Ruby on Rails, PostgreSQL, BCrypt, Capybara, Pure.CSS, W3.CSS</p>
+
+						    <a href="http://youtu.be/FOj3HpGfe5Q?hd=1" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue w3-margin-bottom " role="button">Video</a> 
+							<a href="https://github.com/keyafaz/Bright-Ideas" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue  w3-margin-bottom " role="button">Github</a>
+						</div>
 					</div>
 				</div>
-				 
-			 	<div class="galleryItem">
-					<a href=""><img src="..." alt="images/players_teams.PNG" /></a>
-					<h3>Title</h3>
-					<p>Lorem ipsum dolor sit amet...</p>
-				</div>
-				 
-
+				
 				<div class="galleryItem">
-					<a href="#"><img src="..." alt="" /></a>
-					<h3>Title</h3>
-					<p>Lorem ipsum dolor sit amet...</p>
+					<div class="w3-card-8 w3-dark-grey w3-round-large w3-padding">
+						<div class="w3-container w3-center">
+							<h3 class="w3-pale-blue w3-round">Events</h3>
+							<img src="images/events.PNG" class="w3-left w3-show-inline-block img-responsive portimg w3-hover-opacity " alt="Responsive image-Events" target="_blank" style="width:50%;">
+							<p>Events is web app that allows users to create and join events/cancel participation. The Event Dashboard displays all events separated by the state to where the event will be held: 1 table shows all the events located in the same state as the logged in user’s location and a second table for all events held in other states. The user who created an event has the option to edit or delete that event. Logged users can also add comments on the discussion board per event and see the attendees per event.</p>
+							<p>Technologies: Ruby on Rails, PostgreSQL, BCrypt, Capybara, Pure.CSS, W3.CSS</p>
+
+						    <a href="http://youtu.be/bHUmJ3Agd1g?hd=1" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue w3-margin-bottom " role="button">Video</a> 
+							<a href="https://github.com/keyafaz/Events" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue  w3-margin-bottom " role="button">Github</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="galleryItem">
+					<div class="w3-card-8 w3-dark-grey w3-round-large w3-padding">
+						<div class="w3-container w3-center">
+							<h3 class="w3-pale-blue w3-round">Ninja Gold Game</h3>
+							<img src="images/Ninja_Gold.PNG" class="w3-left w3-show-inline-block img-responsive portimg w3-hover-opacity " alt="Responsive image-Ninja Gold" target="_blank" style="width:50%;">
+							<p>The goal in this mini-game is to help a ninja make money. At the start of the game, the ninja has 0 gold. The ninja can visit different places (farm, cave, house, or casino) to earn different amounts of gold. My objective was to create a web app that allows a ninja to earn a certain amount of gold per place visited, display past activities of the ninja (I queried the activity log to show only the 5 most recent activities), and to determine the total amount of gold the user should have and to save this and the activity log using sessions.</p>
+							<p>Technologies: Ruby on Rails, SQLite, HTML5, CSS3, W3.CSS</p>
+						    <a href="http://youtu.be/vUW6R3Wc2YE?hd=1" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue w3-margin-bottom " role="button">Video</a> 
+							<a href="https://github.com/keyafaz/Ninja-Gold-Game" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue  w3-margin-bottom " role="button">Github</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="galleryItem">
+					<div class="w3-card-8 w3-dark-grey w3-round-large w3-padding">
+						<div class="w3-container w3-center">
+							<h3 class="w3-pale-blue w3-round">Players and Teams</h3>
+							<img src="images/players_teams.PNG" class="w3-left w3-show-inline-block img-responsive portimg w3-hover-opacity " alt="Responsive image-players" target="_blank" style="width:50%;">
+							<p>Web app that allows users to keep track of players and their associated teams. Users can create players and teams that are displayed in a table and can create associations between the two. Users can also update player-team association.</p>
+							<p>Technologies: AngularJS, Express, JavaScript </p>
+
+						    <a href="http://youtu.be/iPYDAJnBmjU?hd=1" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue w3-margin-bottom " role="button">Video</a> 
+							<a href="https://github.com/keyafaz/Players-and-Teams" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue  w3-margin-bottom " role="button">Github</a>
+						</div>
+					</div>
+				</div>
+		
+				<div class="galleryItem">
+					<div class="w3-card-8 w3-dark-grey w3-round-large w3-padding">
+						<div class="w3-container w3-center">
+							<h3 class="w3-pale-blue w3-round">Friends</h3>
+							<img src="images/friends.PNG" class="w3-left w3-show-inline-block img-responsive portimg w3-hover-opacity " alt="Responsive image-players" target="_blank" style="width:50%;">
+							<p>Web app that allows users to create, edit and delete friends and displays a list of all friends</p>
+							<p>Technologies: AngularJS, Express, Mongoose, MongoDB, JavaScript</p>
+
+						    <a href="http://youtu.be/OeUoRg3mWVI?hd=1http://youtu.be/iPYDAJnBmjU?hd=1" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue w3-margin-bottom " role="button">Video</a> 
+							<a href="https://github.com/keyafaz/Friends" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue  w3-margin-bottom " role="button">Github</a>
+						</div>
+					</div>
 				</div>
 			</div>
 
 			<div id="tabs-2">
-				<div class="galleryItem w3-padding-4">
-					<img src="images/Bright_ideas.PNG" class="img-responsive w3-hover-opacity" alt="Responsive image-Bright Ideas" style="width:100%;" target="_blank">
-					<div class="w3-container w3-center">
-						<h3>Bright Ideas</h3>
-						<p>Bright Ideas is a web app that allows users to post ideas on a dashboard. Users can like ideas posted by other users and delete ideas that they post. Users can click on the idea and see total number of likes as well as a list of users who liked it or they can click on other users name and see the total number of posts and likes they have.</p>
-						<p>Technologies: Ruby on Rails, PostgreSQL, BCrypt, Capybara, Pure.CSS, W3.CSS</p>
-						<a href="http://youtu.be/FOj3HpGfe5Q?hd=1" target="_blank" class="btn btn-default" role="button">Video</a> 
-						<a href="https://github.com/keyafaz/Bright-Ideas" target="_blank" class="btn btn-default" role="button">Github</a>
-					</div>
-				</div>
-
-				<div class="galleryItem w3-padding-4">
-					<img src="images/events.PNG" class="img-responsive w3-hover-opacity" alt="Responsive image-Events" style="width:100%;" target="_blank">
-					<div class="w3-container w3-center">
-						<h3>Events</h3>
-			         <p>Events is web app that allows users to create and join events/cancel participation. The Event Dashboard displays all events separated by the state to where the event will be held: 1 table shows all the events located in the same state as the logged in user’s location and a second table for all events held in other states. The user who created an event has the option to edit or delete that event. Logged users can also add comments on the discussion board per event and see the attendees per event.</p>
-						<p>Technologies: Ruby on Rails, PostgreSQL, BCrypt, Capybara, Pure.CSS, W3.CSS</p>
-						<a href="http://youtu.be/bHUmJ3Agd1g?hd=1" target="_blank" class="btn btn-default" role="button">Video</a>
-						<a href="https://github.com/keyafaz/Events" target="_blank" class="btn btn-default" role="button">Github</a>
-					</div>
-				</div>
-
 				<div class="galleryItem">
-					<img src="images/Ninja_Gold.PNG" class="img-responsive w3-hover-opacity" alt="Responsive image-Ninja Gold" style="width:100%;" target="_blank">
-					<div class="w3-container w3-center">
-						<h3>Ninja Gold Game</h3>
-						<p>The goal in this mini-game is to help a ninja make money. At the start of the game, the ninja has 0 gold. The ninja can visit different places (farm, cave, house, or casino) to earn different amounts of gold. My objective was to create a web app that allows a ninja to earn a certain amount of gold per place visited, display past activities of the ninja (I queried the activity log to show only the 5 most recent activities), and to determine the total amount of gold the user should have and to save this and the activity log using sessions.</p>
-						<p>Technologies: Ruby on Rails, SQLite, HTML5, CSS3, W3.CSS</p>
-						<a href="http://youtu.be/vUW6R3Wc2YE?hd=1" target="_blank" class="btn btn-default" role="button">Video</a>
-						<a href="https://github.com/keyafaz/Ninja-Gold-Game" target="_blank" class="btn btn-default" role="button">Github</a>
+					<div class="w3-card-8 w3-dark-grey w3-round-large w3-padding">
+						<div class="w3-container w3-center">
+							<h3 class="w3-pale-blue w3-round">Bright Ideas</h3>
+							<img src="images/Bright_ideas.PNG" class="w3-left w3-show-inline-block img-responsive portimg w3-hover-opacity " alt="Responsive image-Bright Ideas" target="_blank" style="width:50%;">
+							<p>Bright Ideas is a web app that allows Users to post ideas on a dashboard. Users can like ideas posted by other users and delete ideas that they post. Users can click on the idea and see total number of likes as well as a list of users who liked it or they can click on other users name and see the total number of posts and likes they have.</p>
+							<p>Technologies: Ruby on Rails, PostgreSQL, BCrypt, Capybara, Pure.CSS, W3.CSS</p>
+
+						    <a href="http://youtu.be/FOj3HpGfe5Q?hd=1" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue w3-margin-bottom " role="button">Video</a> 
+							<a href="https://github.com/keyafaz/Bright-Ideas" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue  w3-margin-bottom " role="button">Github</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="galleryItem">
+					<div class="w3-card-8 w3-dark-grey w3-round-large w3-padding">
+						<div class="w3-container w3-center">
+							<h3 class="w3-pale-blue w3-round">Events</h3>
+							<img src="images/events.PNG" class="w3-left w3-show-inline-block img-responsive portimg w3-hover-opacity " alt="Responsive image-Events" target="_blank" style="width:50%;">
+							<p>Events is web app that allows users to create and join events/cancel participation. The Event Dashboard displays all events separated by the state to where the event will be held: 1 table shows all the events located in the same state as the logged in user’s location and a second table for all events held in other states. The user who created an event has the option to edit or delete that event. Logged users can also add comments on the discussion board per event and see the attendees per event.</p>
+							<p>Technologies: Ruby on Rails, PostgreSQL, BCrypt, Capybara, Pure.CSS, W3.CSS</p>
+
+						    <a href="http://youtu.be/bHUmJ3Agd1g?hd=1" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue w3-margin-bottom " role="button">Video</a> 
+							<a href="https://github.com/keyafaz/Events" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue  w3-margin-bottom " role="button">Github</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="galleryItem">
+					<div class="w3-card-8 w3-dark-grey w3-round-large w3-padding">
+						<div class="w3-container w3-center">
+							<h3 class="w3-pale-blue w3-round">Ninja Gold Game</h3>
+							<img src="images/Ninja_Gold.PNG" class="w3-left w3-show-inline-block img-responsive portimg w3-hover-opacity " alt="Responsive image-Ninja Gold" target="_blank" style="width:50%;">
+							<p>The goal in this mini-game is to help a ninja make money. At the start of the game, the ninja has 0 gold. The ninja can visit different places (farm, cave, house, or casino) to earn different amounts of gold. My objective was to create a web app that allows a ninja to earn a certain amount of gold per place visited, display past activities of the ninja (I queried the activity log to show only the 5 most recent activities), and to determine the total amount of gold the user should have and to save this and the activity log using sessions.</p>
+							<p>Technologies: Ruby on Rails, SQLite, HTML5, CSS3, W3.CSS</p>
+						    <a href="http://youtu.be/vUW6R3Wc2YE?hd=1" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue w3-margin-bottom " role="button">Video</a> 
+							<a href="https://github.com/keyafaz/Ninja-Gold-Game" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue  w3-margin-bottom " role="button">Github</a>
+						</div>
 					</div>
 				</div>
 			</div>
 			
 			<div id="tabs-3">
 			    <div class="galleryItem">
-					<img src="images/players_teams.PNG" class="img-responsive w3-hover-opacity" alt="Responsive image-players" style="width:100%;" target="_blank">
-					<div class="w3-container w3-center">
-						<h3>Players and Teams</h3>
-						<p>Web app that allows users to keep track of players and their associated teams. Users can create players and teams that are displayed in a table and can create associations between the two. Users can also update player-team association.</p>
-						<p>Technologies: AngularJS, Express, JavaScript </p>
-						<a href="http://youtu.be/iPYDAJnBmjU?hd=1" target="_blank" class="btn btn-default" role="button">Video</a>
-						<a href="https://github.com/keyafaz/Players-and-Teams" target="_blank" class="btn btn-default" role="button">Github</a>
+					<div class="w3-card-8 w3-dark-grey w3-round-large w3-padding">
+						<div class="w3-container w3-center">
+							<h3 class="w3-pale-blue w3-round">Players and Teams</h3>
+							<img src="images/players_teams.PNG" class="w3-left w3-show-inline-block img-responsive portimg w3-hover-opacity " alt="Responsive image-players" target="_blank" style="width:50%;">
+							<p>Web app that allows users to keep track of players and their associated teams. Users can create players and teams that are displayed in a table and can create associations between the two. Users can also update player-team association.</p>
+							<p>Technologies: AngularJS, Express, JavaScript </p>
+
+						    <a href="http://youtu.be/iPYDAJnBmjU?hd=1" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue w3-margin-bottom " role="button">Video</a> 
+							<a href="https://github.com/keyafaz/Players-and-Teams" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue  w3-margin-bottom " role="button">Github</a>
+						</div>
 					</div>
 				</div>
+		
 				<div class="galleryItem">
-					<img src="images/friends.PNG" class="img-responsive w3-hover-opacity" alt="Responsive image-friends" style="width:100%;" target="_blank">
-					<div class="w3-container w3-center">
-						<h3>Friends</h3>
-						<p>Web app that allows users to create, edit and delete friends and displays a list of all friends</p>
-						<p>Technologies: AngularJS, Express, Mongoose, MongoDB, JavaScript</p>
-						<a href="http://youtu.be/OeUoRg3mWVI?hd=1http://youtu.be/iPYDAJnBmjU?hd=1" target="_blank" class="btn btn-default" role="button">Video</a>
-						<a href="https://github.com/keyafaz/Friends" target="_blank" class="btn btn-default" role="button">Github</a>
+					<div class="w3-card-8 w3-dark-grey w3-round-large w3-padding">
+						<div class="w3-container w3-center">
+							<h3 class="w3-pale-blue w3-round">Friends</h3>
+							<img src="images/friends.PNG" class="w3-left w3-show-inline-block img-responsive portimg w3-hover-opacity " alt="Responsive image-players" target="_blank" style="width:50%;">
+							<p>Web app that allows users to create, edit and delete friends and displays a list of all friends</p>
+							<p>Technologies: AngularJS, Express, Mongoose, MongoDB, JavaScript</p>
+
+						    <a href="http://youtu.be/OeUoRg3mWVI?hd=1http://youtu.be/iPYDAJnBmjU?hd=1" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue w3-margin-bottom " role="button">Video</a> 
+							<a href="https://github.com/keyafaz/Friends" target="_blank" class="w3-btn w3-padding-tiny w3-round w3-pale-blue  w3-margin-bottom " role="button">Github</a>
+						</div>
 					</div>
 				</div>
 			</div>
